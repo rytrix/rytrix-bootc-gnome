@@ -25,6 +25,7 @@ dnf5 install -y @gnome-desktop gnome-themes-extra gnome-tweaks \
                 fish btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
                 libratbag-ratbagd waypipe \
                 virt-manager \
-                brave-browser
+                brave-browser \
+                glibc-langpack-en
 
 systemctl enable libvirtd
