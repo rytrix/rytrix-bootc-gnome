@@ -9,7 +9,7 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# Install brave browser
+# Brave browser repo
 cat << EOF > /etc/yum.repos.d/brave-browser.repo
 [brave-browser]
 name=Brave Browser
@@ -21,15 +21,10 @@ repo_gpgcheck=1
 gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 EOF
 
+dnf5 install -y @gnome-desktop gnome-themes-extra gnome-tweaks \
+                fish btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
+                libratbag-ratbagd waypipe \
+                virt-manager \
+                brave-browser
 
-# this installs a package from fedora repos
-dnf5 install -y @gnome-desktop \
-                fish brave-browser
-
-
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+systemctl enable libvirtd
