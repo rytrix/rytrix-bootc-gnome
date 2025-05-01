@@ -23,7 +23,7 @@ EOF
 
 
 # this installs a package from fedora repos
-dnf5 install -y fish \
+dnf5 install -y @gnome-desktop fish \
                 sway waybar wofi mako slurp  brightnessctl gammastep pulseaudio-utils NetworkManager-tui \
                 brave-browser
 
