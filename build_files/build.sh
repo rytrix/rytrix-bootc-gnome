@@ -21,7 +21,7 @@ repo_gpgcheck=1
 gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 EOF
 
-dnf5 install -y @gnome-desktop gnome-themes-extra gnome-tweaks \
+dnf5 install -y gnome-themes-extra gnome-tweaks \
                 fish btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
                 libratbag-ratbagd waypipe \
                 virt-manager \
