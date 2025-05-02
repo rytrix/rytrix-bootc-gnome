@@ -10,22 +10,21 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Brave browser repo
-cat << EOF > /etc/yum.repos.d/brave-browser.repo
-[brave-browser]
-name=Brave Browser
-enabled=1
-autorefresh=1
-baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-EOF
+# cat << EOF > /etc/yum.repos.d/brave-browser.repo
+# [brave-browser]
+# name=Brave Browser
+# enabled=1
+# autorefresh=1
+# baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64
+# gpgcheck=1
+# repo_gpgcheck=1
+# gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+# EOF
 
 dnf5 install -y gnome-themes-extra gnome-tweaks \
                 fish btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
                 libratbag-ratbagd waypipe \
                 virt-manager \
-                brave-browser \
                 glibc-langpack-en
 
 systemctl enable libvirtd
