@@ -24,12 +24,9 @@ set -ouex pipefail
 # dnf5 install -y dnf-plugins-core
 # dnf5 config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo -y
 
-dnf5 group install "sway desktop"
-
 dnf5 install -y miracle-wm \
                 fish btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
                 libratbag-ratbagd waypipe \
                 virt-manager \
-                glibc-langpack-en
 
 systemctl enable libvirtd
