@@ -9,7 +9,7 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-dnf5 install -y sway waybar river wofi rofi mako gammastep i3 awesome \
+dnf5 install -y sway waybar river wofi mako gammastep i3 awesome \
                 fish neovim tmux btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui zoxide \
                 libratbag-ratbagd waypipe tailscale wireguard-tools steam-devices \
                 virt-manager \
