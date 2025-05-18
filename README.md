@@ -274,3 +274,8 @@ Runs shfmt on all Bash scripts.
 - [m2os](https://github.com/m2giles/m2os)
 - [bos](https://github.com/bsherman/bos)
 - [homer](https://github.com/bketelsen/homer/)
+
+## Switch to image
+```bash
+rpm-ostree switch ostree-image-signed:docker://ghcr.io/rytrix/rytrix-bootc-image
+```
