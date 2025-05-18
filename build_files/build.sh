@@ -9,23 +9,8 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# Brave browser repo
-# cat << EOF > /etc/yum.repos.d/brave-browser.repo
-# [brave-browser]
-# name=Brave Browser
-# enabled=1
-# autorefresh=1
-# baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64
-# gpgcheck=1
-# repo_gpgcheck=1
-# gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-# EOF
-
-# dnf5 install -y dnf-plugins-core
-# dnf5 config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo -y
-
-dnf5 install -y \
-                fish neovim btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
+dnf5 install -y sway waybar river wofi rofi mako gammastep i3 \
+                fish neovim tmux btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui \
                 libratbag-ratbagd waypipe \
                 virt-manager \
 
