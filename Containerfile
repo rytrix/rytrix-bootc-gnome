@@ -5,7 +5,7 @@ COPY build_files /
 # Base Image
 # FROM ghcr.io/ublue-os/silverblue-main:42
 # FROM ghcr.io/ublue-os/sway-atomic-main:42
-FROM ghcr.io/ublue-os/vauxite-main:42
+FROM ghcr.io/ublue-os/vauxite-main:41
 # FROM quay.io/fedora/fedora-silverblue:42
 # FROM quay.io/fedora/fedora-bootc:42
 # FROM quay.io/fedora-ostree-desktops/sway-atomic:42
