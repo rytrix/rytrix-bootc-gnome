@@ -18,3 +18,7 @@ dnf5 install -y gnome-themes-extra gnome-tweaks \
                 virt-manager \
 
 systemctl enable libvirtd
+
+systemctl disable rpm-ostreed-automatic.timer
+systemctl disable flatpak-system-update.timer
+systemctl --global disable flatpak-user-update.timer
