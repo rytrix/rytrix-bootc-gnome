@@ -11,8 +11,9 @@ set -ouex pipefail
 
 dnf5 remove -y firefox firefox-langpacks
 
+
 dnf5 install -y \
-                fish neovim tmux btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui zoxide \
+                fish zsh neovim tmux btop distrobox fastfetch fzf htop iotop tldr kitty NetworkManager-tui podman-tui zoxide \
                 libratbag-ratbagd waypipe tailscale wireguard-tools steam-devices \
                 virt-manager \
                 sway waybar river wofi mako gammastep i3 awesome grim slurp network-manager-applet nm-connection-editor brightnessctl \
